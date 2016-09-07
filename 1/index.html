@@ -13,6 +13,9 @@
 		    iframe {
         overflow:hidden;
     }
+	div.lockframe {
+	z-index: -2; 
+	}
 	</style>
 	<script>
 		// update with the desired time to refresh the presentation (in minutes)
@@ -28,18 +31,12 @@
 	</script>
 	<SCRIPT LANGUAGE="javascript">
 
-function click() {
-if (event.button==1 || event.button==2) {
-}
-}
-document.onMouseDown=click
 
-</SCRIPT> 
 </head>
 <body>
 <!-- update the presentation ID with your own presentation -->
 <!-- update the &delayms= with the time to show each slide (in milliseconds) -->
-<iframe id="presentFrame" src="https://docs.google.com/presentation/d/1vFJU0-CH_IgKXVVm69VVMeSZMT4Grm-yy9ZzSvAAgEA/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe class="lockframe" id="presentFrame" src="https://docs.google.com/presentation/d/1vFJU0-CH_IgKXVVm69VVMeSZMT4Grm-yy9ZzSvAAgEA/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
    </div>
   </div>
 </body>
